@@ -1,0 +1,8 @@
+./ = means "here"' in current folder
+../ = exit current folder (go to parent folder)
+/ = goes to utmost root folder / root level of domain
+
+file:/// = browse files and folders offline (except safari)
+
+http:// = open external web adress
+https:// = opens external web adress with ssl encryption ("secure")

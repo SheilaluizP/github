@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheila - Character</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Itim&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Kaisei+Decol&family=Kaisei+Opti&family=Linden+Hill:ital@0;1&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/character.css">
+</head>
+<body>
+    <br>
+    <br>
+        <h1>Miss Oui Oui</h1>
+        <h2>the duck</h2>
+        <figure>
+         <img src="img/duck.svg" alt width="20%"> 
+        </figure>
+
+        <p>
+            Allow me to introduce the one and only Miss Oui Oui, the duck. I’m not your average duck—oh no! My appearance is filled with signature characteristics that set me apart from the rest. Located on my head, you'll often find my cherished burgundy beret, a fashion statement that complements my bold personality. But what truly makes me one-of-a-kind is my most remarkable feature: my tail, which is a soft and charismatic shade of LAVENDER. It’s a hue that turns heads and sparks curiosity wherever I waddle. 
+        </p>
+        
+        <figure>
+         <h3>The Design Process</h3>
+             <img src="img/sketch figma duck.png" alt="">
+             <figcaption>First, i sketch my character on a paper with a pencil. To then, recreate it on Figma.</figcaption>
+        </figure>
+
+        <button id="game" onclick="top.location.href='../Project3/index.html'">Play Game</button>
+        <br>
+
+
+        <div id="panel">Click to reveal</div>
+        <script>
+            const panel = document.getElementById("panel");
+            panel.onclick=function(){
+                this.classList.toggle("slide-up")
+            }
+        </script>
+    
+   
+</body>
+</html>

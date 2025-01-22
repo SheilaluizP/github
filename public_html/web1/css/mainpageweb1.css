@@ -1,0 +1,36 @@
+header {
+    background-color: rgb(132, 60, 83);
+}
+body{
+    background-color: rgb(205, 146, 146);
+}
+h1 {
+    color: rgb(156, 86, 96); 
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    letter-spacing: 5px; 
+    word-spacing: 20px; 
+    text-shadow: 5px 5px 5px rgb(46, 11, 19); 
+    font-size: 100px;
+}
+
+.fancy-button { 
+    background-color: rgb(101, 56, 56);
+    padding: 10px 40px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px pink;
+    color: white;
+}
+.fancy-button:hover{ 
+    background-color: indianred;
+    color: white;
+}
+
+::marker {
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+    text-indent: 0px;
+    text-align: start;
+    text-align-last: start;
+    color: rgb(230, 210, 210);
+}

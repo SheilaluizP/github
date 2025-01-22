@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    text-align: left;
+    background-color: #b22b5d41;
+}
+ 
+body{
+    background-color: #b22b5d41  ;
+    text-align: center;
+}
+
+figcaption{
+    font-family:'Linden Hill';
+    color: #433333;
+    font-size: 20px;
+}
+
+h1{/* She.likes */
+    padding: 5px;
+    position: absolute;
+    width: 620px;
+    height: 80px;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 48px;
+    color: rgba(69, 17, 17, 0.9);
+    top: -10px;
+}
+
+h2{
+    font-family:'Kaisei Decol';
+    font-weight: bold 48;
+    color: #764B4B;
+}
+
+p{
+    color: #5B3535;
+    font-size: 16px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav{
+    position: absolute;
+    right: 10px;
+    top: -0.2px;
+    font-size: 22px;
+  
+}
+
+nav ul li {
+    display: inline-block; 
+    margin-right: 20px;
+    font-size: 13px;
+    font-style: oblique;
+    font-family: 'Josefin Slab';
+    color: #4C2120;
+}
+
+#banner{
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center top;
+    background-image: url(../img/roses.jpg);
+    margin-top: 29px;
+    
+}
+
+button{
+    scroll-behavior: smooth;
+    padding-bottom: -500px;
+    font-family:'Kaisei Opti';
+    font-weight: bold 36;
+    height: 40px;
+    width: 140px;
+    border-radius: 10px;
+    border: none;
+    color: #713232;
+    background-color: #F3D9D9;
+    margin-top: 150px;
+}
+
+#about{
+    background-color: #F3D9D9;
+    border-radius: 90px;
+    padding: 10px 20px;
+    max-width: 1000px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+
+#Interest{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(277px, 1fr));
+    gap: 22px;
+}
+
+#border{
+    background-color: #b22b5d20;
+    border-color:#451415;
+    border-radius: 50px;
+    padding: 10px 20px;
+    padding-bottom: 5px;
+}
+
+#gallery{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-width: 2000px;
+    margin-left: 20px;
+    
+}
+
+.container img{
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 2px solid white; 
+}
+
+.container img:hover{
+    width: 100%;
+}
+
+/* #gallery figure img{
+    position: center;
+} */
+
+#gallery_article{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 300px;
+    position: relative;
+    margin: 0 auto;
+    left: -70px;
+}
+
+.contact{
+    display: inline-block;
+}
+
+#footer{
+    position: absolute;
+    right: 10px;
+}
+

@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: pink;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#oval{
+    width: 200px;
+    height: 100px;
+    background: white;
+    border-radius: 100px / 50px;
+    border-color: antiquewhite transparent;
+  }
+
+#oval.change-me{
+    border-color: rgb(183, 107, 128) transparent;
+    border-top: 60px rgb(183, 107, 128) transparent;
+    border-left: 60px rgb(183, 107, 128) transparent;
+    border-bottom: 60px rgb(183, 107, 128) transparent;
+
+}
+
+#oval.change-me:before{
+    border-color: rgb(183, 107, 128) transparent;
+    transform: translateX(3000px) scale(2.4) rotate(33deg) skew(2deg);
+    translate: 300px;
+    left: 300px;
+
+}
+
+/* #oval.change-me{
+    border-color: rgb(183, 107, 128) transparent !important; 
+     border-top: 60px rgb(183, 107, 128) transparent !important;
+    border-left: 60px rgb(183, 107, 128) transparent !important;
+    border-bottom: 60px rgb(183, 107, 128) transparent !important;
+
+} */

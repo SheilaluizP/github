@@ -1,0 +1,80 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+body{
+    font-family:"Linden Hill", serif;
+    font-size: 22px;
+    line-height: 44px;
+    color: rgb(188, 70, 139);
+    background-color: rgb(255, 255, 255);
+    background-image: url();
+    text-align: center;
+}
+
+h1{
+    color: rgb(188, 70, 139);
+}
+
+h2{
+    color: rgb(188, 70, 139);
+}
+
+p{
+    padding: 10px;
+}
+img{
+    width: 460px;
+    padding-top: 100px;
+
+}
+#panel{
+    align-content: center;
+    position: fixed;
+    z-index: 10;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: bisque;
+    transition: all 0.5s ease-in;
+    color: rgb(221, 52, 95);
+}
+
+.slide-up{
+    transform: translateY(-90vh);
+}
+
+.linden-hill-regular {
+    font-family: "Linden Hill", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.linden-hill-regular-italic {
+    font-family: "Linden Hill", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+#game{
+    padding: 10px 30px;
+    font-size: 2.4rem;
+    background: lavender;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 10px 10px 20px;
+    cursor: pointer;
+    color: rgb(180, 77, 218);
+}
+
+#game.hover{
+    background-color: rgb(157, 82, 208);
+}
+  

@@ -1,0 +1,65 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+     background-color: blanchedalmond;
+}
+
+header{
+    background-color: beige;
+    padding: 20px;
+    width: 100%;
+}
+
+h1{
+    font-family: 'Agbalumo';
+    font-size: 50px;
+    color: burlywood;
+    text-shadow: 5px 5px 5px pink;
+}    
+
+h2{
+    font-family: 'Agbalumo';
+    text-align: center;
+    font-size: 25px;
+    color: burlywood;
+    padding: 18px;
+}
+
+p{
+    padding: 10px;
+    text-align: center;
+    color: burlywood;
+    font-family: 'Itim';
+}
+
+figcaption{
+    padding: 10px;
+    color: burlywood;
+    font-family: 'Itim';
+}
+.agbalumo-regular {
+    font-family: "Agbalumo", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.itim-regular {
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+section figure img{
+    width: 80%;
+}
+
+#gallery {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+

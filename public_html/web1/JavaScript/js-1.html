@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS- Demo 1</title>
+    
+    <style>
+        body{ background-color: blanchedalmond;}
+    </style>
+</head>
+<body>
+    <h1>JavaScript - Demo 1</h1>
+
+    <main id="content">Loading...</main>
+
+    <button onclick="hangry()">Just Don't</button>
+
+    
+    <script>
+        alert("Hello world");
+        console.log("Page loaded successfully!");
+        
+        //Variables
+        //dynamic variable type "let" (data can be changed)
+
+        let myName = "Sheila"; 
+
+        myName = "Luiza";
+
+        console.log(myName); 
+
+        // constant variable (data can't be changed)
+        const pi = 3.14159;
+
+        console.log(pi * 5);
+
+        // mixed message logging
+        //uses + to concatenate strings with other strings or data 
+        // Strings = textual data, in quotes
+
+        console.log("Pi times 5: " + pi*5);
+
+        
+        let mySound = new Audio("sounds/typical-trap-loop-140bpm-129880.mp3");
+        
+        
+        const myContent = document.getElementById("content");
+         
+    
+        function hangry() {
+            alert("🫨");
+            mySound.play();
+            myContent.innerHTML = "Get Out" 
+        }
+
+
+
+    </script>
+
+</body>
+</html>

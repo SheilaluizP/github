@@ -1,0 +1,74 @@
+*{ 
+    margin: 0;
+    padding: 0;
+box-sizing: border-box;
+}
+nav ul li {
+    display: inline-block; 
+    margin-right: 20px;
+    font-size: 30px;
+    font-style: oblique;
+}
+html {
+    scroll-behavior: smooth;
+    }
+
+main article img{
+    width: 100%;
+    height: auto;
+}
+.fancy-button { 
+    background-color: rgb(101, 56, 56);
+    padding: 10px 40px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px pink;
+    color: white;
+}
+.fancy-button:hover{ 
+    background-color: indianred;
+    color: white;
+}
+header{
+    background-color: rgb(137, 32, 57);
+}
+h1 {
+    color: rgb(202, 56, 75); 
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    letter-spacing: 5px; 
+    word-spacing: 20px; 
+    text-shadow: 5px 5px 5px rgb(46, 11, 19); 
+    font-size: 100px;
+}
+body {
+    background-color: rgb(203, 108, 108);
+}
+
+/* figure img{
+    height: 1080px;
+    width: 540px;
+    grid-template-columns: repeat(auto-fit, min-max(350px, 1fr));
+    
+} */
+figcaption {
+    color: rgb(72, 33, 49);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px;
+}
+
+figcaption:hover{
+    color: rgb(211, 154, 178);
+}
+
+/* figure{
+    text-align: center;
+} */
+h2{
+    background-color: rgb(208, 121, 121);
+    color: rgb(172, 54, 93);
+}
+
+p{
+    color: rgb(89, 17, 40);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
