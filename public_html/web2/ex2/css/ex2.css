@@ -1,7 +1,25 @@
 *{ 
     margin: 0;
     padding: 0;
-box-sizing: border-box;
+    box-sizing: border-box;
+}
+header {
+  background-color: rgb(79, 19, 97);
+}
+
+body{
+  background-color: rgb(163, 128, 173);
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+h1 {
+  color: rgb(193, 157, 215); 
+  font-family: Verdana, Geneva, Tahoma, sans-serif; 
+  letter-spacing: 5px; 
+  word-spacing: 20px; 
+  text-shadow: 5px 5px 5px rgb(46, 11, 19); 
+  font-size: 70px;
 }
 
 .element{
@@ -32,14 +50,15 @@ box-sizing: border-box;
       background-color: rgb(114, 22, 100);
     }
 }
-  
-body,
-html {
-    height: 100%;
+
+.fancy-button { 
+  background-color: rgb(136, 42, 219);
+  padding: 10px 40px;
+  border-radius: 10px;
+  box-shadow: 2px 4px 10px pink;
+  color: white;
 }
-  
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.fancy-button:hover{ 
+  background-color: rgb(141, 79, 144);
+  color: white;
 }
