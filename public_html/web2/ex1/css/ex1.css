@@ -1,8 +1,14 @@
-*{ 
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-box-sizing: border-box;
-}
+  }
+  
+  html {
+    font-size: 1.44rem;
+    line-height: 1.44;
+    height: 100%;
+  }
 
 header {
     background-color: rgb(79, 19, 97);
@@ -19,32 +25,31 @@ h1 {
     text-shadow: 5px 5px 5px rgb(46, 11, 19); 
     font-size: 70px;
 }
-
-div{
-    width: 100px;
-    height: 100px;
-    position: relative;
-    background: rgb(59, 32, 32);
-    transition: width 2s, height 2s;
-    border-radius: 10%;
-}
-
-div:hover{
-    width: 300px;
-    height: 150px;
-    background: rgb(90, 41, 66);
-    transition-timing-function: ease-in-out;
+  img {
+    opacity: 0.25;
+    transition: opacity 500ms;
+    width: 25%;
+    position: absolute;
+  }
   
-}
+  img:hover {
+    opacity: 1;
+  }
 
-.fancy-button { 
+  .fancy-button { 
     background-color: rgb(136, 42, 219);
     padding: 10px 40px;
     border-radius: 10px;
     box-shadow: 2px 4px 10px pink;
     color: white;
+    
+     /* place buttom of the page*/
+    position:relative;
+    margin-top:100%;
 }
 .fancy-button:hover{ 
     background-color: rgb(141, 79, 144);
     color: white;
 }
+
+ 

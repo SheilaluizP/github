@@ -1,64 +1,50 @@
 *{ 
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+box-sizing: border-box;
 }
+
 header {
-  background-color: rgb(79, 19, 97);
+    background-color: rgb(79, 19, 97);
 }
 
 body{
-  background-color: rgb(163, 128, 173);
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
+    background-color: rgb(163, 128, 173);
 }
 h1 {
-  color: rgb(193, 157, 215); 
-  font-family: Verdana, Geneva, Tahoma, sans-serif; 
-  letter-spacing: 5px; 
-  word-spacing: 20px; 
-  text-shadow: 5px 5px 5px rgb(46, 11, 19); 
-  font-size: 70px;
+    color: rgb(193, 157, 215); 
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    letter-spacing: 5px; 
+    word-spacing: 20px; 
+    text-shadow: 5px 5px 5px rgb(46, 11, 19); 
+    font-size: 70px;
 }
 
-.element{
-    height: 250px;
-    width: 250px;
-    margin: 0 auto;
-    background-color: rgb(129, 35, 35);
-    animation-name: stretch;
-    animation-duration: 1.5s;
-    animation-timing-function: ease-out; 
-    animation-delay: 0;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-    animation-fill-mode: none;
-    animation-play-state: running;
+div{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background: rgb(59, 32, 32);
+    transition: width 2s, height 2s;
+    border-radius: 10%;
 }
-@keyframes stretch {
-    0% {
-      transform: scale(.3);
-      background-color: rgba(154, 50, 50, 0.374);
-      border-radius: 100%;
-    }
-    50% {
-      background-color: rgb(162, 44, 85);
-    }
-    100% {
-      transform: scale(1.5);
-      background-color: rgb(114, 22, 100);
-    }
+
+div:hover{
+    width: 300px;
+    height: 150px;
+    background: rgb(90, 41, 66);
+    transition-timing-function: ease-in-out;
+  
 }
 
 .fancy-button { 
-  background-color: rgb(136, 42, 219);
-  padding: 10px 40px;
-  border-radius: 10px;
-  box-shadow: 2px 4px 10px pink;
-  color: white;
+    background-color: rgb(136, 42, 219);
+    padding: 10px 40px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px pink;
+    color: white;
 }
 .fancy-button:hover{ 
-  background-color: rgb(141, 79, 144);
-  color: white;
+    background-color: rgb(141, 79, 144);
+    color: white;
 }

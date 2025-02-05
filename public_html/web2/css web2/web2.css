@@ -19,6 +19,9 @@ h1 {
     font-size: 100px;
 }
 
+ul{
+    padding: 1rem;
+}
 .fancy-button { 
     background-color: rgb(136, 42, 219);
     padding: 10px 40px;
