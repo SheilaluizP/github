@@ -31,6 +31,8 @@ div{
     height: 250px;
     width: 250px;
     margin: 0 auto;
+    position:relative;
+    margin-top: 25%;;
     background-color: rgb(129, 35, 35);
     animation-name: stretch;
     animation-duration: 1.5s;
@@ -62,6 +64,9 @@ div{
   border-radius: 10px;
   box-shadow: 2px 4px 10px pink;
   color: white;
+  position:relative;
+  margin-top:100%;
+
 }
 .fancy-button:hover{ 
   background-color: rgb(141, 79, 144);

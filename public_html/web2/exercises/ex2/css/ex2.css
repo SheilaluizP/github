@@ -20,7 +20,7 @@ h1 {
     font-size: 70px;
 }
 
-div{
+.square{
     width: 100px;
     height: 100px;
     position: relative;
@@ -29,7 +29,7 @@ div{
     border-radius: 10%;
 }
 
-div:hover{
+.square:hover{
     width: 300px;
     height: 150px;
     background: rgb(90, 41, 66);
@@ -43,6 +43,8 @@ div:hover{
     border-radius: 10px;
     box-shadow: 2px 4px 10px pink;
     color: white;
+    position:relative;
+    margin-top:100%;
 }
 .fancy-button:hover{ 
     background-color: rgb(141, 79, 144);
