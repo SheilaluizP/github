@@ -4,21 +4,21 @@
     box-sizing: border-box;
 }
 header {
-  background-color: rgb(79, 19, 97);
+  background-color: rgb(97, 19, 67);
 }
 
 body{
-  background-color: rgb(163, 128, 173);
+  background-color: rgb(171, 105, 137);
   /* display: flex;
   align-items: center;
   justify-content: center; */
 }
 h1 {
-  color: rgb(193, 157, 215); 
+  color: rgb(215, 157, 205); 
   font-family: Verdana, Geneva, Tahoma, sans-serif; 
   letter-spacing: 5px; 
   word-spacing: 20px; 
-  text-shadow: 5px 5px 5px rgb(46, 11, 19); 
+  text-shadow: 5px 5px 5px rgb(80, 23, 44); 
   font-size: 70px;
 }
 
@@ -59,7 +59,7 @@ div{
 }
 
 .fancy-button { 
-  background-color: rgb(136, 42, 219);
+  background-color: rgb(135, 5, 74);
   padding: 10px 40px;
   border-radius: 10px;
   box-shadow: 2px 4px 10px pink;
@@ -69,6 +69,6 @@ div{
 
 }
 .fancy-button:hover{ 
-  background-color: rgb(141, 79, 144);
+  background-color: rgb(224, 124, 161);
   color: white;
 }
