@@ -16,13 +16,14 @@ h1 {
     letter-spacing: 5px; 
     word-spacing: 20px; 
     font-size: 5.1em;
-    
+    padding-left: 1rem;
 }
 
 .navbar{
     padding: 1rem;
     position: relative;
-    margin-right: 100%;
+    margin-left: 100%;
+    margin-top: -200px;
     font-family: "Inter", serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -32,7 +33,63 @@ h1 {
     /* font-size: 2.1em; */
 }
 
+.description{
+    color: rgb(255, 255, 255); 
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 100;
+    word-spacing: 5px; 
+
+    /* postion */
+    padding: 1rem;
+    position: relative;
+    margin-top: 145px;
+}
+.exercises{
+    padding: 1rem;
+    position: relative;
+    text-align: center;
+    
+    color: rgb(255, 255, 255); 
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 1px; 
+    word-spacing: 2px; 
+}
+
+a{
+    color: rgb(255, 255, 255); ;
+    font-size: 30px;
+    font-family: "Inter", serif;
+    display: inline-block;
+    margin-inline-start: 20px;
+    text-decoration: none;
+    font-weight: 300;
+    font-style: normal;
+    padding: 8px;
+    letter-spacing: 2px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem;
+    grid-gap: 2rem;
+    margin-left: 60px;
+    align-self: center;
+}
+
+.rectangle {
+    width: 400px;
+    height: 300px;
+    background-color: #4c295c;
+}
 .name{
     position: relative;
-    margin-right: 100%;
+    margin-right: 90%;
 }
+
