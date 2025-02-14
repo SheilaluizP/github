@@ -43,7 +43,7 @@ h2{
 
 #platform:hover{
     transform: translateX(100px) translateY(-24px) rotateX(55deg) rotateZ(45deg);
-    box-shadow: 1px 2px 10px rgba(204, 204, 204, 0.95), 
+    box-shadow: 1px 2px 10px rgba(214, 185, 222, 0.95), 
         70px 70px 24px rgba(204, 204, 204, 0.15);
 }
 
