@@ -1,0 +1,15 @@
+#vinyl{
+    animation: music 6s infinite alternate-reverse;
+
+}
+
+@keyframes music{
+    0%{
+        transform: translateZ(0px) rotate(10deg);
+
+    }
+
+    100%{
+        transform: translateZ(300px) rotate(-60deg);
+    }
+}
