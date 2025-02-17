@@ -93,3 +93,17 @@ a{
     margin-right: 90%;
 }
 
+@media screen and ( min-width:925px){
+    .rectangle{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+
+@media screen and ( min-width:525px){
+    .rectangle{
+        grid-template-columns: 1fr;
+    }
+    
+}
+
