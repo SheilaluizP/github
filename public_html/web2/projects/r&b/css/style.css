@@ -94,10 +94,16 @@ ul li{
 }
 }
 
-.about{
+#about{
     background-color: #590202;
     padding-top: 132px;
     border-bottom: 2px solid white;
+
+    h1{
+        background-color: black;
+        border-bottom: 2px solid white;
+        text-align: center;
+    }
     
     p{
     color: white;
@@ -105,9 +111,11 @@ ul li{
     font-style: normal;
     font-weight: 300;
     padding-left: 10px;
+    font-size: 30px;
 
     }
 }
+
 section{
     display: block;
     unicode-bidi: isolate;
@@ -161,10 +169,30 @@ section{
 
 /* description */
 
-.description{
+#bm{
     background-color:#D9A443 ;
+    }
 
+#gbg{
+    background-color:#3A180C ;
 
+    }
+
+#hbg{
+    background-color: #225E94;
+    }
+
+#bbg{
+    background-color:#7E2404 ;
+}
+
+#embg{
+    background-color: #0F2D0C ;
+}
+
+#description{
+
+    
 
     h1{
         background-color: black;
@@ -203,7 +231,7 @@ section{
         text-align: center;
     }
 
-    figure {
+   figure {
         display: grid;
         justify-content: center;
         
@@ -211,17 +239,71 @@ section{
 
     img{
         max-width: 100%;
+        padding: 10px;
     }
 
+    .albums{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 25px;
+    }
 
-
+    .albums:hover .overlay{
+        transform: scale(1)
+    }
 }
 
 
+/* cards */
 
+#cards h4 {
+    font-size: clamp(0.833rem, 1.6vw + 0.579rem, 1.728rem);
+    opacity: 0.5;
+    transition: opacity 0.5s;
+  }
 
+#cards h4:hover {
+    transition: color 1s;
+    opacity: 1;
+  }
+#cards{
+    position: relative;
+    top: 1.44rem;
+    opacity: 0;
+    transition: 0.25s;
+  }
+  
+#cards section {
+    transform: translateY(1.728rem);
+    transition: transform 0.25s;
+  }
+  
+#cards section:hover {
+    transform: translateY(0);
+  }
 
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #a07628 ;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    transition: .3s ease;
+}
 
+h4#info {
+    font-family: "Julius Sans One", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 20px;
+}
 
 
 .scroll-to-top {
@@ -244,7 +326,7 @@ section{
       padding: 0.5rem;
     }
 
-    .grid{
+    .grid, .albums{
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -260,7 +342,7 @@ section{
 @media screen and (min-width: 1250px) {
 
 
-    .grid{
+    .grid, .albums{
         grid-template-columns: repeat(3, 1fr);
     }
 
@@ -269,7 +351,7 @@ section{
 @media screen and (min-width: 1600px) {
 
 
-    .grid{
+    .grid, .albums{
         grid-template-columns: repeat(4, 1fr);
     }
 
