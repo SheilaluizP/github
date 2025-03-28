@@ -307,6 +307,12 @@ section{
     transition: 0.3s ease;
 }
 
+@media screen and (min-width: 450px) {
+    .albums{
+       
+        grid-template-columns: 1fr;  
+    }
+}
 @media screen and (min-width: 850px) {
     nav a{
       padding: 0.5rem;
