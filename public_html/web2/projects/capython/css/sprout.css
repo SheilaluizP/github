@@ -1,0 +1,58 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color:beige ;
+  }
+
+  h1{
+    color: #404a39;
+    font-size: 3rem;
+    font-family: "Patrick Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
+    padding: 20px;
+    background-color: darkolivegreen;
+  }
+  
+  h2 , a, figcaption {
+    color: #56674B;
+    font-size: 2rem;
+    font-family: "Patrick Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
+    padding: 20px;
+  }
+  
+  h3 {
+    color: #476161;
+  }
+  
+  p , li {
+    color: #92a834;
+    font-family: "Patrick Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  /* Section Styles */
+section {
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  /* Image Styles */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
