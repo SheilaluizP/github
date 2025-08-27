@@ -48,38 +48,18 @@ body {
     align-items: center;
     font-size: 2em;
     cursor: pointer;
-    border: 2px solid black;
+    border: solid black 2px;
   }
 
   .cell:hover {
     background-color: #e0e0e0;
   }
 
-  /* cell/board */
-
-/* Remove right border for cells in rightmost column */
-.cell:nth-child(3n) {
-  border-right: none;
-}
-
-/* Remove bottom border for cells in bottom row */
-.cell:nth-child(n+7) {
-  border-bottom: none;
-}
-
-/* Remove left border for left column */
-.cell:nth-child(3n-2) {
-  border-left: none;
-}
-
-/* Remove top border for top row */
-.cell:nth-child(-n+3) {
-  border-top: none;
-}
 
   .status {
     margin-top: 20px;
     font-size: 18px;
+    justify-content: center;
   }
 
   .restart-botton {
