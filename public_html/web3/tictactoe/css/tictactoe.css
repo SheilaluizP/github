@@ -1,0 +1,98 @@
+*{ 
+    margin: 0;
+    padding: 0;
+box-sizing: border-box;
+}
+
+body {
+    font-family: "Georama", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    display: grid;
+    justify-content: center;
+    margin: 0;
+    background-color:#b4e5b5;
+  }
+
+  h1{
+    margin-bottom: 0.5rem;
+    font-size: 5em;
+  }
+
+  h2{
+    text-align: center;
+    font-size: 2.5em
+  }
+  
+  .game-container {
+    text-align: center;
+    height: 50rem;
+  }
+
+  .board {
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 0;
+    margin: 0 auto;
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .cell {
+    background-color: white;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+    border: 2px solid black;
+  }
+
+  .cell:hover {
+    background-color: #e0e0e0;
+  }
+
+  /* cell/board */
+
+/* Remove right border for cells in rightmost column */
+.cell:nth-child(3n) {
+  border-right: none;
+}
+
+/* Remove bottom border for cells in bottom row */
+.cell:nth-child(n+7) {
+  border-bottom: none;
+}
+
+/* Remove left border for left column */
+.cell:nth-child(3n-2) {
+  border-left: none;
+}
+
+/* Remove top border for top row */
+.cell:nth-child(-n+3) {
+  border-top: none;
+}
+
+  .status {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+
+  .restart-botton {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #e07d7d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .restart-botton:hover {
+    background-color: #e04444;
+  }
