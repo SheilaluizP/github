@@ -1,6 +1,9 @@
 let cell = document.querySelectorAll(".cell");
-let paneauStatus = document.querySelector(".status");
-let  = document.querySelector(".restart-botton");
+let paneauStatus = document.querySelector("#message");
+let panneauMessageGagnant = document.querySelector("#message img");
+let replayBtn = document.querySelector(".restart-botton");
+
+
 
 let joueurX = true;
 const patrons = [
@@ -19,14 +22,16 @@ for (let boite of cell) {
     boite.addEventListener("click", function() {
         if(boite.active){
             if (joueurX){
-                boite.innerText = "X";
+                // boite.innerText = "X";
+                boite.computedStyleMap.backgroundImage = "url('X.png')";
                 joueurX = false;
             }
             else{
-                boite.innerText = "O";
+                // boite.innerText = "O";
+                boite.computedStyleMap.backgroundImage = "url('Y.png')";
                  joueurX = true;
             } 
-            boite.active = false;
+            boite.active = false;   
         }
         valide();
 

@@ -49,18 +49,17 @@ body {
     font-size: 2em;
     cursor: pointer;
     border: solid black 2px;
+    background-image: contain;
   }
 
   .cell:hover {
     background-color: #e0e0e0;
   }
 
-
-  .status {
-    margin-top: 20px;
-    font-size: 18px;
-    justify-content: center;
+  #message img{
+    max-width: 30vmin;
   }
+
 
   .restart-botton {
     margin-top: 15px;
