@@ -5,30 +5,56 @@ box-sizing: border-box;
 }
 
 body {
-    font-family: "Georama", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
     display: grid;
-    justify-content: center;
     margin: 0;
-    background-color:#b4e5b5;
+    background-color:#DFF5FF;
+  }
+  main{
+    text-align: center;
   }
 
   h1{
+    font-family: "Kavoon", serif;
+    font-weight: 400;
+    font-style: normal;
     margin-bottom: 0.5rem;
-    font-size: 5em;
+    font-size: 4em;
+    text-align: center;
+    color: #2A5795;
   }
 
   h2{
     text-align: center;
     font-size: 2.5em
   }
+
+  .navbar{
+      font-family: "Kavoon", serif;
+      font-weight: 400;
+      font-style: normal;
+      margin-bottom: 0.5rem;
+      font-size: 2em;
+      position: relative;
+      padding-left: 1rem;
+      color: #2A5795;
+
+    ul li{
+      margin-right: 20px;
+      list-style-type: none;
+      text-decoration: none;
+      float: right;
+   }
+
+   a{
+    text-decoration: none;
+   }
+  }
   
   .game-container {
     text-align: center;
     height: 50rem;
   }
+
 
   .board {
     padding-top: 2rem;
@@ -58,20 +84,27 @@ body {
 
   #message img{
     max-width: 30vmin;
+    justify-content: center;
   }
 
 
   .restart-botton {
-    margin-top: 15px;
+    margin-top: 4rem;
     padding: 10px 20px;
-    font-size: 16px;
-    background-color: #e07d7d;
-    color: white;
+    font-size: 2em;
+    background-color: #BECEEA;
     border: none;
-    border-radius: 5px;
+    border-radius: 50%;
     cursor: pointer;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: #A62B4F;
+
+
   }
 
   .restart-botton:hover {
-    background-color: #e04444;
+    background-color: #87aae7;
   }

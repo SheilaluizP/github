@@ -23,17 +23,18 @@ for (let boite of cell) {
         if(boite.active){
             if (joueurX){
                 // boite.innerText = "X";
-                boite.computedStyleMap.backgroundImage = "url('X.png')";
+                boite.style.backgroundImage = "url('./img/X.svg')";
                 joueurX = false;
             }
             else{
                 // boite.innerText = "O";
-                boite.computedStyleMap.backgroundImage = "url('Y.png')";
+                boite.style.backgroundImage = "url('./img/O.svg')";
                  joueurX = true;
             } 
+            boite.style.backgroundSize = "cover;"
             boite.active = false;   
-        }
         valide();
+        }
 
     });
 
@@ -41,14 +42,19 @@ for (let boite of cell) {
 
 const valide = function (){
     for (let patron of patrons) {
-        let val1 = cell[patron[0]].innerText;
-        let val2 = cell[patron[1]].innerText;
-        let val3 = cell[patron[2]].innerText;
+        // let val1 = cell[patron[0]].innerText;
+        // let val2 = cell[patron[1]].innerText;
+        // let val3 = cell[patron[2]].innerText;
+        let val1 = cell[patron[0]].style.backgroundImage.slice(5,16);
+        let val2 = cell[patron[1]].style.backgroundImage.slice(5,16);
+        let val3 = cell[patron[2]].style.backgroundImage.slice(5,16);
         
         if (val1 &&
             val1 === val2 &&
             val1 === val3) {
             console.log(`Le gagnant est ${val1}`);
+            console.log(panneauMessageGagnant);
+            panneauMessageGagnant.src = val1;
             for (let boite of cell) {
                 boite.active = false;
 
@@ -57,11 +63,12 @@ const valide = function (){
     }
 }
 
-restartBtn.addEventListener("click", function() {
+replayBtn.addEventListener("click", function() {
     for (let boite of cell) {
+        boite.style.backgroundImage = "";
         boite.active = true;
-        boite.innerText = "";
+        // boite.innerText = "";
         joueurX = true;
-        paneauStatus.innerText = "";
+        // paneauStatus.innerText = "";
     }
 })
