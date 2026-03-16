@@ -1,15 +1,29 @@
-::marker {
-    unicode-bidi: isolate;
-    font-variant-numeric: tabular-nums;
-    text-transform: none;
-    text-indent: 0px;
-    text-align: start;
-    text-align-last: start;
-    color: rgb(230, 210, 210);
+*{ 
+    margin: 0;
+    padding: 0;
+box-sizing: border-box;
 }
-header{
-    background-color: rgb(154, 87, 96);
-}
+
+body {
+    display: grid;
+    margin: 0;
+    background-color:#ffced2;
+    justify-content: center;
+    text-align: center;
+  }
+
+ul li{
+      margin-right: 20px;
+      list-style-type: none;
+      text-decoration: none;
+      font-size: 2rem;
+
+   }
+   
+a{
+    text-decoration: none;
+   }
+
 h1 {
     color: rgb(202, 56, 75); 
     font-family: Verdana, Geneva, Tahoma, sans-serif; 
@@ -17,9 +31,12 @@ h1 {
     word-spacing: 20px; 
     text-shadow: 5px 5px 5px rgb(46, 11, 19); 
     font-size: 100px;
+    padding-bottom: 1rem;
 }
 h2 {
     color: rgb(226, 213, 214);
+    font-size: 40px;
+    padding-bottom: 1rem;
 
 }
 body{

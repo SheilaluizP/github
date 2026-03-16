@@ -9,8 +9,22 @@ body {
     margin: 0;
     background-color:#DFF5FF;
   }
+
   main{
     text-align: center;
+  }
+
+  footer{
+    text-align: center;
+  }
+
+  .plate{
+     background-image: url(plate.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40rem;
+
   }
 
   h1{
@@ -51,41 +65,60 @@ body {
   }
   
   .game-container {
-    text-align: center;
     height: 50rem;
   }
 
-
   .board {
-    padding-top: 2rem;
+    padding-top: 9rem;
     display: grid;
-    grid-template-columns: repeat(3, 100px);
-    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(3, 140px);
+    grid-template-rows: repeat(3, 140px);
     gap: 0;
     margin: 0 auto;
     width: 20rem;
     height: 20rem;
+    left: 50%;
+    right: 50%;
+    padding-top: 20rem;
+    padding-left: 1rem;
+    place-content: center;
   }
 
   .cell {
-    background-color: white;
+    /* background-color: white; */
     display: grid;
     justify-content: center;
     align-items: center;
-    font-size: 2em;
+    max-width: 30vmin;
     cursor: pointer;
-    border: solid black 2px;
     background-image: contain;
+    padding-bottom: 5rem;
+    background-repeat: no-repeat;
+
+    border: solid #225068 2px;
+    border-radius: 20px;
+    place-items: center;
+    height: 10vmin;
+    width: 10vmin;
+    margin: 4px;
+    background-size: contain;
+   
   }
 
   .cell:hover {
-    background-color: #e0e0e0;
+    background-color: #39369f;
   }
 
-  #message img{
-    max-width: 30vmin;
+#message{
     justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+
+  img{
+    padding-bottom: 2rem;
   }
+}
 
 
   .restart-botton {
@@ -108,3 +141,5 @@ body {
   .restart-botton:hover {
     background-color: #87aae7;
   }
+
+  
