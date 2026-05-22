@@ -1,0 +1,131 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+}
+  
+header {
+    background: #8e2c44;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15em;
+
+    h1{
+        font-size: 20;
+    }
+}
+ 
+#banner {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin: 20px;
+}
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}  
+.carousel{
+    text-align: center;
+    width: 100%;
+    height: 200px;
+}
+
+button {
+
+    padding: 10px 20px;
+    border: none;
+    background: #8e2c44;
+    border-radius: 60px;
+    cursor: pointer;
+
+}
+
+.more {
+    position: absolute;
+    top: 100%;
+
+    left: 50%;
+    margin-top: 20px;
+
+}
+  
+.section-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.section-title-left {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: left;
+    padding: 40px 30px;
+    background: white;
+    margin-top: 10px;
+}
+
+.section-title-right {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: right;
+    padding: 40px 30px;
+    background: white;
+    margin-top: 10px;
+}
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+  
+.box {
+    height: 20rem;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text {
+  font-size: 18px;
+ 
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.divider {
+  height: 6px;
+  background: #c05a73;
+  margin: 20px 0;
+}
+
+footer {
+  background: #8e2c44;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}

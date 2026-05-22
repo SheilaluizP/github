@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene keyboard-shortcuts="" screenshot="" xr-mode-ui="" device-orientation-permission-ui="">
+<a-sphere position="0 1.00055 0.60524" radius="1.25" color="#EF2D5E" material="color: #ff6524" rotation="-3.979191887183567 -3.949398081836765 -13.061145897802247" scale="4 4 4"></a-sphere>      
+      <a-assets>
+     <img id="sky" src="./assets/stars.jpg">
+     </a-assets>
+  <a-sky src="#sky"></a-sky>
+
+<a-gltf-model src="./assets/saturn.glb" position="1 1.54187 0.2796" scale="1.01 1 1" animation="dur: 10000; easing: linear; loop: true; property: rotation; to: 0 360 0" gltf-model="./assets/saturn.glb"></a-gltf-model>     <a-gltf-model src="./assets/neptune.glb" position="0 1.86 0.88" animation="property: rotation; to: 0 360 0; loop: true; dur: 12000; easing: linear"></a-gltf-model>
+</a-scene>
+  </body>
+</html>

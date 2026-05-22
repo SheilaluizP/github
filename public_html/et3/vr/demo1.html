@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+       <a-box position="-1.02639 2.1356 -2.97361" rotation="4.286870223168819 15.523718501274525 -30.217221157404488" color="#4CC3D9" material="color: #984ad9" scale="1.24201 0.89443 1.59821"></a-box>
+      <a-sphere position="0.16768 3.12311 -5.36861" radius="1.25" color="#EF2D5E" material="color: #ff7a9c" scale="0.961 0.961 -2.21912"></a-sphere>
+      <a-cylinder position="1.2996 1.22298 -3" radius="0.5" height="1.5" color="#FFC65D" material="color: #71fefc" rotation="7.179734130784346 -5.5800359667790875 -30.44296652868603"></a-cylinder>
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+      <a-assets>
+     <img id="sky" src="./galaxy.jpg">
+     </a-assets>
+
+  
+      <a-gltf-model src="penthouse.gltf" gltf-model="penthouse.gltf" position="0 0.86 1.88"></a-gltf-model>
+
+      <a-entity camera look-controls wasd-controls="200" position="0 1.6 0">
+  <a-entity cursor="fuse: true; fuseTimeout: 500"
+            position="0 0 -1"
+            geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
+            material="color: black; shader: flat">
+  </a-entity>
+</a-entity>
+
+<a-entity id="box2" cursor-listener geometry="primitive: box" material="color: blue"></a-entity>
+
+<script>
+  // Component to change to a sequential color on click.
+AFRAME.registerComponent('cursor-listener', {
+  init: function () {
+    var lastIndex = -1;
+    var COLORS = ['red', 'green', 'blue'];
+    this.el.addEventListener('click', function (evt) {
+      lastIndex = (lastIndex + 1) % COLORS.length;
+      this.setAttribute('material', 'color', COLORS[lastIndex]);
+      console.log('I was clicked at: ', evt.detail.intersection.point);
+    });
+  }
+});
+</script>
+
+
+    <a-sky src="#sky"></a-sky>
+        <!-- Basic cone. -->
+         <a-cone color="tomato" radius-bottom="2" radius-top="0.5" material="color: #a30000" position="-0.24913 0.202 -3.79559"></a-cone>
+        <!-- Textured box. -->
+        <a-cone src="#texture" position="-0.24864 1.06837 -3.75776" scale="0.91832 0.91832 0.98049"></a-cone>
+        <a-entity rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 2000">
+        <a-sphere position="5 0 0" color="pink"></a-sphere>
+</a-entity>
+    </a-scene>
+  </body>
+</html>    

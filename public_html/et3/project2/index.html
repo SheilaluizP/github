@@ -1,0 +1,43 @@
+
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v7.0.0/dist/aframe-extras.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
+  </head>
+  <body>
+  <a-scene mindar-image="imageTargetSrc: targets (6).mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+        <a-asset-item id="nameModel" src="./assets/logo_small.glb"></a-asset-item>
+        <a-asset-item id="companyModel" src="./assets/company.glb"></a-asset-item>
+        <a-asset-item id="smModel" src="./assets/SM_cup.gltf"></a-asset-item>
+        <a-asset-item id="cgModel" src="./assets/CG_cup.gltf"></a-asset-item>
+        <a-asset-item id="dpModel" src="./assets/DP_cup.gltf"></a-asset-item>
+
+      <a-camera position="0 0 0" look-controls="enabled: false" cursor="fuse: false; rayOrigin: mouse;" raycaster="far: ${customFields.libVersion}; objects: .clickable"></a-camera>
+
+      <a-entity mindar-image-target="targetIndex: 0">
+        <a-gltf-model rotation="0 0 0 " position="0.08 0 0.15" scale="0.10 0.10 0.10" src="#nameModel" animation-mixer>
+      </a-entity>
+      
+    
+       <a-entity mindar-image-target="targetIndex: 1">
+        <a-gltf-model id="cup" class="clickable" rotation="0 0 0 " position="0 0 0.15" scale="4.18 4.18 4.18" src="#smModel" animation-mixer>
+      </a-entity>
+   
+
+      <a-entity mindar-image-target="targetIndex: 2">
+        <a-gltf-model rotation="0 0 0 " position="0 -0.50 0" scale="0.35 0.35 0.35" src="#companyModel" animation-mixer>
+      </a-entity>
+
+  </a-scene>
+
+  <script>
+     const cup = document.querySelector("#cup");
+    cup.addEventListener("click", () => {
+        cup.setAttribute("animation", "property: rotation; to: 0 0 360; loop: true; dur: 1000")
+    })
+
+  </script>
+  </body>
+</html>
