@@ -10,10 +10,10 @@ body {
     background-color:#cbf8e7;
     justify-content: center;
     text-align: center;
-    text-decoration: none;
+
   }
 
-.navbar{
+.links{
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
