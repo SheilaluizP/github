@@ -6,6 +6,8 @@
 
 body{
      background-color: blanchedalmond;
+     item-align: center;
+     text-align: center;
 }
 
 header{
@@ -19,15 +21,32 @@ h1{
     font-size: 50px;
     color: burlywood;
     text-shadow: 5px 5px 5px pink;
+    text-align: center;
 }    
 
 h2{
     font-family: 'Agbalumo';
     text-align: center;
-    font-size: 25px;
+    font-size: 15px;
     color: burlywood;
     padding: 18px;
 }
+
+
+ul li{
+      margin-right: 20px;
+      list-style-type: none;
+      text-decoration: none;
+      text-align: center;
+
+
+    a{
+    text-decoration: none;
+   }
+
+}
+
+
 
 p{
     padding: 10px;
@@ -36,7 +55,7 @@ p{
     font-family: 'Itim';
 }
 
-figcaption{
+ul li{
     padding: 10px;
     color: burlywood;
     font-family: 'Itim';
@@ -52,14 +71,14 @@ figcaption{
     font-weight: 400;
     font-style: normal;
 }
-
+/* 
 section figure img{
     width: 80%;
-}
+} */
 
-#gallery {
+/* #gallery {
     display: grid;
     gap: 1em;
     grid-template-columns: 1fr 1fr 1fr;
-}
+} */
 
